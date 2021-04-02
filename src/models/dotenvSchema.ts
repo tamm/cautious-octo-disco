@@ -40,5 +40,6 @@ export let env: Env;
 export function loadEnv(): void {
   env = load(schema);
   // TODO: remove this output
+  console.log(process.env);
   console.log(env);
 }
