@@ -8,11 +8,11 @@ export const schema = {
     optional: true,
     default: 8080,
   },
-  APP_NAME: {
+  HEROKU_APP_NAME: {
     type: /^[-a-z]+$/,
     optional: true,
   },
-  BASE_URL: {
+  APP_URL: {
     type: String,
     optional: true,
   },
@@ -39,7 +39,4 @@ export let env: Env;
 
 export function loadEnv(): void {
   env = load(schema);
-  // TODO: remove this output
-  console.log(process.env);
-  console.log(env);
 }
