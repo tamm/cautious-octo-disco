@@ -20,6 +20,18 @@ export const schema = {
     type: String,
     optional: true,
   },
+  AIRTABLE_API_KEY: {
+    type: String,
+    optional: true,
+  },
+  AIRTABLE_DATABASE_ID: {
+    type: String,
+    optional: true,
+  },
+  AIRTABLE_ENDPOINT_URL: {
+    type: String,
+    optional: true,
+  },
   NODE_ENV: ["production" as const, "development" as const],
 };
 
