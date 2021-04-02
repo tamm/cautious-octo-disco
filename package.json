@@ -34,10 +34,9 @@
   },
   "scripts": {
     "build": "tsc",
-    "vercel-build": "tsc",
-    "ci:start": "node .",
-    "prestart": "npm run build",
-    "start": "concurrently \"nodemon -e ts .\" \"wait-on http://localhost:8080 && open http://localhost:8080\"",
+    "start": "node .",
+    "predev": "npm run build",
+    "dev": "concurrently \"nodemon -e ts .\" \"wait-on http://localhost:8080 && open http://localhost:8080\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "version": "1.0.0"
